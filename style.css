@@ -290,3 +290,11 @@ footer ul li a {
 footer ul li a:hover {
     text-decoration: underline;
 }
+
+/* responsive tablet */
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color:red;
+    }
+}
