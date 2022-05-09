@@ -27,7 +27,7 @@ body {
     grid-area: nav;
     top: 0px;
     background-color: #fff;
-    padding: 2.5em 8em 2em 8em;
+    padding: 2.5em 14% 2em 14%;
     z-index: 2;
     display: flex;
     flex-direction: row;
@@ -293,8 +293,44 @@ footer ul li a:hover {
 
 /* responsive tablet */
 
-@media screen and (max-width: 768px) {
-    body {
-        background-color:red;
+@media screen and (max-width: 1000px) {
+
+    /*general */
+
+    .contenedorGeneral {
+        grid-template-columns: 2% auto 2%;
+    }
+
+    /*navegacion*/
+    .navegacion {
+        padding: 2.5em 5em 2em 7em;
+        z-index: 2;
+    }
+
+    .logo {
+        max-width: 15em;
+    }
+
+    /*Sobre nosotros*/
+    .sobreNosotrosTexto {
+        width: 50%;
+        padding-right: 2em;
+        text-align: justify;
+    }
+
+    /*Listado Productos*/
+    .listadoProductos {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1.5fr repeat(10, 1fr);
+        font-size: 1.3em;
+    }
+
+    .listadoProductos .TipoTabla{
+        display:none;
+    }
+    
+    .listadoProductos div:nth-child(4n){
+        background-color: rgb(247, 247, 247);
     }
 }
