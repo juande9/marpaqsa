@@ -17,7 +17,21 @@ body {
     grid-template-columns: 15% auto 15%;
 }
 
+
 /*Navegacion*/
+
+#btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+}
+
+.menu ul li {
+    padding: 10px;
+    display: block;
+}
 
 .navegacion {
     box-shadow: 1px 5px 25px -17px rgba(82, 82, 82, 0.5);
@@ -45,7 +59,6 @@ ul {
 
 .navegacion nav ul {
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
 }
@@ -211,7 +224,7 @@ h4 {
 
 .serviciosCard {
     text-align: center;
-    width: 33%;
+    width: 30%;
     display: inline-table;
     margin-top: 3em;
     margin-bottom: 3em;
@@ -291,9 +304,7 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
-/* responsive tablet */
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1023px) {
 
     /*general */
 
@@ -302,20 +313,41 @@ footer ul li a:hover {
     }
 
     /*navegacion*/
+
     .navegacion {
-        padding: 2.5em 5em 2em 7em;
         z-index: 2;
+        height: 50px;
     }
 
     .logo {
         max-width: 15em;
     }
 
+    header label {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 95px;
+        left: 0px;
+        width: 100%;
+        margin-left: -100%;
+        text-align: center;
+        background-color: white;
+    }
+
+    #btn-menu:checked~.menu {
+        margin: 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
     /*Sobre nosotros*/
     .sobreNosotrosTexto {
-        width: 50%;
-        padding-right: 2em;
-        text-align: justify;
+        max-width: 80%;
     }
 
     /*Listado Productos*/
@@ -326,11 +358,118 @@ footer ul li a:hover {
         font-size: 1.3em;
     }
 
-    .listadoProductos .TipoTabla{
-        display:none;
+    .listadoProductos .TipoTabla {
+        display: none;
+    }
+
+    .listadoProductos div:nth-child(4n) {
+        background-color: rgb(247, 247, 247);
+    }
+}
+
+/* Responsive Celular */
+
+@media screen and (max-width: 744px) {
+
+    h2 {
+        padding: 1em;
+    }
+
+    section {
+        padding: 0em;
+    }
+
+    /*navegador*/
+
+    .menu {
+        position: absolute;
+        top: 90px;
+        width: 100%;
+    }
+
+    .navegacion {
+        padding: 2em 5em;
+        align-items: center;
+    }
+
+    .MenuHamburguesa {
+        display: none;
+    }
+
+    .logo {
+        max-width: 13em;
+    }
+
+    header label {
+        display: block;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+    }
+
+    /*encabezado*/
+
+    .fondoEncabezado {
+        width: 100%;
+        height: 300px;
+        grid-area: encabezado;
+        background-size: cover;
+        display: flex;
+    }
+
+    .textoEncabezado {
+        font-size:1em;
     }
     
-    .listadoProductos div:nth-child(4n){
-        background-color: rgb(247, 247, 247);
+    .prodquimEncabezado {
+        font-size: 3em;
+        padding: 0.5em;
+    }
+    
+    .telefonoEncabezado {
+        font-size: 1em;
+        padding: 1em;
+    }
+
+    /*sobre nosotros*/
+
+    #sobrenosotros iframe {
+        display: none;
+    }
+
+    .sobreNosotrosTexto {
+        max-width: 100%;
+        padding: 0em 2em 0em 2em;
+    }
+
+    /*servicios*/
+
+    .contenedorServicios {
+        flex-direction: column;
+    }
+
+    .contenedorServicios .serviciosCard {
+        width: 100%;
+        margin-bottom: 0em;
+    }
+
+    /*contacto*/
+
+    .contenedorImagen {
+        display: none;
+    }
+
+    .contenedorFormulario {
+        width: 100%;
+    }
+
+    #formulario {
+        width: 100%;
+    }
+
+    /*footer*/
+
+    .footercol2{
+        display: none;
     }
 }
