@@ -12,13 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
-    <link href="stylebootstrap.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+    <!--nav-->
     <nav class="navbar navbar-expand-lg bg-light sticky-top py-2 border-bottom">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
+            <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -42,6 +43,7 @@
             </div>
         </div>
     </nav>
+    <!--Encabezado-->
     <div id="encabezado" class="px-5 my-5 py-5 text-center">
         <h1 class="display-5 fw-bold py-4">Productos Químicos para la Industria</h1>
         <div class="col-lg-8 mx-auto">
@@ -56,228 +58,182 @@
             </div>
         </div>
     </div>
-    <section class="container">
-
+    <hr class="featurette-divider">
+    <!--Sobre Nosotros-->
+    <section id="sobrenosotros" class="text-justify container py-4">
+        <div class="row">
+            <h1 class="text-center display-4 py-4 mb-4">Sobre Nosotros</h1>
+            <div class="col-xl-7">
+                <p class="small lh-lg">Desde 1978, en Marpaq S.A. nos hemos desarrollado como <b>importadores y
+                        distribuidores</b>
+                    de materias primas e insumos para la industria y el campo, cumpliendo y adaptandonos a las
+                    necesidades del mercado.</p>
+                <p class="small lh-lg">Estamos ubicados en el <b>Parque Industrial de Lanús</b> y contamos con depósitos
+                    de 8500 m2 cubiertos con playa de carga y descarga de 1500 m2. Nuestras oficinas administrativas se
+                    encuentran dentro
+                    del mismo predio garantizando así que se cumplan los requerimientos de nuestros clientes.</p>
+                <p class="small lh-lg">Comenzando como una empresa familiar, logramos expandirnos y crecer como uno de
+                    los
+                    importadores de productos químicos más importantes a nivel nacional. Prueba de esto es su nuevo
+                    depósito
+                    ubicado a pocos metros de las oficinas administrativas que agrega (m2) a los existentes brindando
+                    así
+                    un mejor servicio de carga y descarga.</p>
+            </div>
+            <div class="col-xl-5">
+                <iframe class="container-fluid" width="560" height="315" src="https://www.youtube.com/embed/HOigJYx7lFk"
+                    title="Nuestros depositos" frameborder="0" alt="Video institucional"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            </div>
+        </div>
     </section>
+    <!--Productos-->
+    <section id="productos" class="container py-4">
+        <h1 class="text-center display-4 py-4 mb-4">Productos</h1>
+        <form action="https://formspree.io/f/xjvlapwy" method="POST">
+            <input type="search" id="busqueda" name="q" class="inputTexto">
+            <input type="submit" value="Buscar" class="boton hvr-grow-shadow" />
+            <div class="listadoProductos">
+                <div class="encabezadoTabla ProductoTabla">Nombre</div>
+                <div class="encabezadoTabla TipoTabla">Tipo de Uso</div>
+                <div class="encabezadoTabla OrigenTabla">Origen</div>
+                <div class="ProductoTabla">Acido Acético</div>
+                <div class="TipoTabla">Industrial - Curtiembre</div>
+                <div class="OrigenTabla">China - USA</div>
+                <div class="ProductoTabla">Acido Clorhídrico</div>
+                <div class="TipoTabla">Industrial - Fertilizante</div>
+                <div class="OrigenTabla">China</div>
+                <div class="ProductoTabla">Bicarbonato de Sodio</div>
+                <div class="TipoTabla">Industrial - Farmaceutica</div>
+                <div class="OrigenTabla">Francia</div>
+                <div class="ProductoTabla">Acido Acético</div>
+                <div class="TipoTabla">Industrial - Curtiembre</div>
+                <div class="OrigenTabla">China - USA</div>
+                <div class="ProductoTabla">Acido Clorhídrico</div>
+                <div class="TipoTabla">Industrial - Fertilizante</div>
+                <div class="OrigenTabla">China</div>
+                <div class="ProductoTabla">Carbonato de Potasio</div>
+                <div class="TipoTabla">Industrial - Farmaceutica</div>
+                <div class="OrigenTabla">Francia</div>
+                <div class="ProductoTabla">Acido Polo</div>
+                <div class="TipoTabla">Industrial - Curtiembre</div>
+                <div class="OrigenTabla">China - USA</div>
+                <div class="ProductoTabla">Acido Clorhídrico</div>
+                <div class="TipoTabla">Industrial - Fertilizante</div>
+                <div class="OrigenTabla">China</div>
+                <div class="ProductoTabla">Bicarbonato de Sodio</div>
+                <div class="TipoTabla">Industrial - Farmaceutica</div>
+                <div class="OrigenTabla">Francia</div>
+                <div class="ProductoTabla">Acido Clorhídrico</div>
+                <div class="TipoTabla">Industrial - Fertilizante</div>
+                <div class="OrigenTabla">China</div>
+                <div class="ProductoTabla">Carbonato de Potasio</div>
+                <div class="TipoTabla">Industrial - Farmaceutica</div>
+                <div class="OrigenTabla">Francia</div>
+                <div class="ProductoTabla">Acido Polo</div>
+                <div class="TipoTabla">Industrial - Curtiembre</div>
+                <div class="OrigenTabla">China - USA</div>
+                <div class="ProductoTabla">Acido Clorhídrico</div>
+                <div class="TipoTabla">Industrial - Fertilizante</div>
+                <div class="OrigenTabla">China</div>
+                <div class="ProductoTabla">Bicarbonato de Sodio</div>
+                <div class="TipoTabla">Industrial - Farmaceutica</div>
+                <div class="OrigenTabla">Francia</div>
+            </div>
+    </section>
+    <!--Servicios-->
+    <section id="servicios" class="container py-4">
+        <h1 class="text-center display-4 py-4 mb-4">Servicios</h1>
+        <div class="row text-center align-items-baseline">
+            <div class="col-lg-4">
+                <img class="pb-2" src="images/camion.png" alt="Camion">
+                <h3 class="fw-normal fw-bold py-3">Logística Integral</h2>
+                    <p class="lh-lg small">Contamos con una flota de camiones y personal capacitado, cumpliendo así con
+                        el plazo
+                        de entrega que requiere el cliente. Todas las unidades cuentan con la habilitación para carga
+                        peligrosa y para el traslado de sustancias reguladas por organismos nacionales.</p>
+            </div>
+            <div class="col-lg-4">
+                <img class="pb-2" src="images/manos.png" alt="Manos">
+                <h3 class="fw-normal fw-bold py-3">Atención Personalizada</h2>
+                    <p class="lh-lg small">Nos adaptamos a las necesidades y requerimientos que nuestros clientes
+                        solicitan para brindarles un servicio único y permanente.</p>
+            </div>
+            <div class="col-lg-4">
+                <img class="pb-2" src="images/tilde.png" alt="Check">
+                <h3 class="fw-normal fw-bold py-3">Certificaciones especiales</h2>
+                    <p class="lh-lg small">Contamos con la certificación internacional <b>RINA ISO 9001</b> y ofrecemos
+                        etiquetado SGA para ofrecer a nuestros clientes la mejor calidad de atención y servicios.</p>
+            </div>
+    </section>
+    <!--Contacto-->
+    <section id="contacto" class="container py-4">
+        <h1 class="text-center display-4 py-4 mb-4">Contactanos</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="mb-3">
+                    <label for="nombre-apellido" class="form-label">Nombre y Apellido (Requerido)</label>
+                    <input type="text" class="form-control" id="nombre-apellido" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electronico (Requerido)</label>
+                    <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="Empresa" class="form-label">Empresa</label>
+                    <input type="text" class="form-control" id="empresa" placeholder="Ejemplo S.A.">
+                </div>
+                <div class="mb-3">
+                    <label for="consulta" class="form-label">Consulta</label>
+                    <textarea class="form-control" id="consulta" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn mb-3">Enviar Consulta</button>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <img class="img-fluid rounded float-end" src="images/imgcatalogo.jpg" alt="Foto del deposito">
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="bg-dark text-white text-center text-lg-start">
+        <div class="container pt-4 pb-1">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 mb-4 mb-md-0">
+                    <img class="mb-4" src="images/logoblanco.png" alt="logo" width="150">
+                    <p>
+                        Blanco Encalada 3379 - Lanús Este - B1824JEY<br>Buenos Aires - Argentina
+                    </p>
+                </div>
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0 d-none d-lg-block">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#sobrenosotros" class="text-white">Sobre Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#productos" class="text-white">Productos</a>
+                        </li>
+                        <li>
+                            <a href="#servicios" class="text-white">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#contacto" class="text-white">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 MARPAQ S.A.
+        </div>
+        <!-- Copyright -->
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Marpaq S.A. - Productos Químicos</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div class="contenedorGeneral">
-        <header class="navegacion" id="inicio">
-            <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
-            <input type="checkbox" id="btn-menu">
-            <label for="btn-menu"><img src="images/menu.png" alt="botonmenu"></label>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#sobrenosotros">Sobre Nosotros</a></li>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div id="encabezado" class="fondoEncabezado">
-            <div class="textoEncabezado">
-                <h1 class="prodquimEncabezado">Productos Químicos para la Industria</h1>
-                <h3 class="telefonoEncabezado"><b>Celular</b> <i>11-5808-1066</i> - <b>Teléfonos</b>
-                    <i>011-4246-6924/6973 ó
-                        2051-8088/8080</i>
-                </h3>
-            </div>
-            <a href="#productos" class="boton botonEncabezado hvr-grow-shadow">Listado de Productos</a>
-        </div>
-        <main class="contenido">
-            <section id="sobrenosotros">
-                <h2>Sobre Nosotros</h2>
-                <div class="contenedorSobreNosotros">
-                    <div class="sobreNosotrosTexto">
-                        <p>Desde 1978, en Marpaq S.A. nos hemos desarrollado como <b>importadores y distribuidores</b>
-                            de materias primas e insumos para la industria y el campo, cumpliendo y adaptandonos a las
-                            necesidades del mercado.</p>
-                        <p>Estamos ubicados en el <b>Parque Industrial de Lanús</b> y contamos con depósitos de 8500 m2
-                            cubiertos con
-                            playa de carga y descarga de 1500 m2. Nuestras oficinas administrativas se encuentran dentro
-                            del
-                            mismo
-                            predio garantizando así que se cumplan los requerimientos de nuestros clientes.</p>
-                        <p>Comenzando como una empresa familiar, logramos expandirnos y crecer como uno de los
-                            importadores
-                            de
-                            productos químicos más importantes a nivel nacional. Prueba de esto es su nuevo depósito
-                            ubicado
-                            a
-                            pocos metros de las oficinas administrativas que agrega (m2) a los existentes brindando así
-                            un
-                            mejor
-                            servicio de carga y descarga.</p>
-                    </div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HOigJYx7lFk"
-                        title="Nuestros depositos" frameborder="0" alt="Video institucional"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-                </div>
-            </section>
-            <section id="productos">
-                <h2>Listado de Productos</h2>
-                <form action="https://formspree.io/f/xjvlapwy" method="POST">
-                    <input type="search" id="busqueda" name="q" class="inputTexto">
-                    <input type="submit" value="Buscar" class="boton hvr-grow-shadow" />
-                    <div class="listadoProductos">
-                        <div class="encabezadoTabla ProductoTabla">Nombre</div>
-                        <div class="encabezadoTabla TipoTabla">Tipo de Uso</div>
-                        <div class="encabezadoTabla OrigenTabla">Origen</div>
-                        <div class="ProductoTabla">Acido Acético</div>
-                        <div class="TipoTabla">Industrial - Curtiembre</div>
-                        <div class="OrigenTabla">China - USA</div>
-                        <div class="ProductoTabla">Acido Clorhídrico</div>
-                        <div class="TipoTabla">Industrial - Fertilizante</div>
-                        <div class="OrigenTabla">China</div>
-                        <div class="ProductoTabla">Bicarbonato de Sodio</div>
-                        <div class="TipoTabla">Industrial - Farmaceutica</div>
-                        <div class="OrigenTabla">Francia</div>
-                        <div class="ProductoTabla">Acido Acético</div>
-                        <div class="TipoTabla">Industrial - Curtiembre</div>
-                        <div class="OrigenTabla">China - USA</div>
-                        <div class="ProductoTabla">Acido Clorhídrico</div>
-                        <div class="TipoTabla">Industrial - Fertilizante</div>
-                        <div class="OrigenTabla">China</div>
-                        <div class="ProductoTabla">Carbonato de Potasio</div>
-                        <div class="TipoTabla">Industrial - Farmaceutica</div>
-                        <div class="OrigenTabla">Francia</div>
-                        <div class="ProductoTabla">Acido Polo</div>
-                        <div class="TipoTabla">Industrial - Curtiembre</div>
-                        <div class="OrigenTabla">China - USA</div>
-                        <div class="ProductoTabla">Acido Clorhídrico</div>
-                        <div class="TipoTabla">Industrial - Fertilizante</div>
-                        <div class="OrigenTabla">China</div>
-                        <div class="ProductoTabla">Bicarbonato de Sodio</div>
-                        <div class="TipoTabla">Industrial - Farmaceutica</div>
-                        <div class="OrigenTabla">Francia</div>
-                        <div class="ProductoTabla">Acido Clorhídrico</div>
-                        <div class="TipoTabla">Industrial - Fertilizante</div>
-                        <div class="OrigenTabla">China</div>
-                        <div class="ProductoTabla">Carbonato de Potasio</div>
-                        <div class="TipoTabla">Industrial - Farmaceutica</div>
-                        <div class="OrigenTabla">Francia</div>
-                        <div class="ProductoTabla">Acido Polo</div>
-                        <div class="TipoTabla">Industrial - Curtiembre</div>
-                        <div class="OrigenTabla">China - USA</div>
-                        <div class="ProductoTabla">Acido Clorhídrico</div>
-                        <div class="TipoTabla">Industrial - Fertilizante</div>
-                        <div class="OrigenTabla">China</div>
-                        <div class="ProductoTabla">Bicarbonato de Sodio</div>
-                        <div class="TipoTabla">Industrial - Farmaceutica</div>
-                        <div class="OrigenTabla">Francia</div>
-                    </div>
-            </section>
-            <section id="servicios">
-                <h2>Servicios</h2>
-                <div class="contenedorServicios">
-                    <div class="serviciosCard hvr-float">
-                        <img src="images/camion.png" alt="Camion">
-                        <h4>Logística Integral</h4>
-                        <p>Contamos con una flota de camiones y personal capacitado, cumpliendo así con el plazo de
-                            entrega
-                            que
-                            requiere el cliente. Todas las unidades cuentan con la habilitación para carga peligrosa y
-                            para
-                            el
-                            traslado de sustancias reguladas por organismos nacionales.</p>
-                    </div>
-                    <div class="serviciosCard hvr-float">
-                        <img src="images/manos.png" alt="Manos estrechadas">
-                        <h4>Atención Personalizada</h4>
-                        <p>Nos adaptamos a las necesidades y requerimientos que nuestros clientes solicitan para
-                            brindarles
-                            un
-                            servicio único y permanente.</p>
-                    </div>
-                    <div class="serviciosCard hvr-float">
-                        <img src="images/tilde.png" alt="Tilde verificado">
-                        <h4>Certificaciones especiales</h4>
-                        <p>Contamos con la certificación internacional RINA ISO 9001 y ofrecemos etiquetado SGA para
-                            ofrecer
-                            a
-                            nuestros clientes la mejor calidad de atención y servicios.</p>
-                    </div>
-                </div>
-            </section>
-            <section id="contacto">
-                <h2>Comunicate con nosotros</h2>
-                <div class="contenedorFormulario">
-                    <div id="formulario">
-                        <form method="post" action="https://formspree.io/f/xjvlapwy">
-                            <label>Nombre y Apellido (Requerido)</label><br>
-                            <input type="text" name="nombre" class="inputTexto" required><br>
-                            <label>Correo Electronico (Requerido)</label><br>
-                            <input type="email" name="email" class="inputTexto" required><br>
-                            <label>Empresa</label><br>
-                            <input type="text" name="empresa" class="inputTexto"><br>
-                            <label>Consulta</label><br>
-                            <textarea name="consulta" maxlength="500" required class="inputTexto"
-                                placeholder="Máximo 500 caracteres."></textarea><br>
-                            <input type="submit" name="Consulta" class="boton hvr-grow-shadow">
-                        </form>
-                    </div>
-                    <div class="contenedorImagen">
-                        <img src="images/imgcatalogo.jpg" alt="Foto del deposito">
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="contenedorFooter">
-            <div class="footercol1">
-                <img src="images/logoblanco.png" alt="logo" width="150">
-                <p>Blanco Encalada 3379 - Lanús Este - B1824JEY - Buenos Aires - Argentina</p>
-                <p>© Marpaq S.A. 2022</p>
-            </div>
-            <div class="footercol2">
-                <ul>
-                    <li><a href="#sobrenosotros">Sobre Nosotros</a></li>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#registrarse">Registrarse</a></li>
-                </ul>
-            </div>
-        </footer>
-    </div>
-</body>
-
-</html> -->
