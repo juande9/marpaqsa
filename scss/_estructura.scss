@@ -1,0 +1,74 @@
+$textoSubtitulos: 1.3em;
+$colorTablaHijos: rgb(247, 247, 247);
+
+/*Encabezado*/
+
+#encabezado {
+    background: rgb(237, 237, 237);
+    background: linear-gradient(328deg, rgba(237, 237, 237, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(237, 237, 237, 1) 100%);
+}
+
+/*Sobre Nosotros*/
+
+#sobrenosotros {
+    text-align: justify;
+}
+
+/*Listado de Productos*/
+
+.listadoProductos {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: 1.6fr repeat(10, 1fr);
+    max-height: 400px;
+    overflow: auto;
+    font-size: 14px;
+    z-index: 1;
+}
+
+.listadoProductos div:nth-child(6n+4),
+.listadoProductos div:nth-child(6n+5),
+.listadoProductos div:nth-child(6n+6) {
+    background-color: $colorTablaHijos;
+}
+
+.listadoProductos div {
+    padding: 1em;
+}
+
+.encabezadoTabla {
+    font-weight: 600;
+    background-color: white;
+    z-index: 1 !important;
+}
+
+/*Servicios*/
+
+#servicios {
+    h3 {
+        color: $colorPrincipal;
+        font-size: $textoSubtitulos;
+    }
+}
+
+/*footer*/
+
+footer {
+    li {
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.8em !important;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    div {
+        p {
+            font-size: 0.7em !important;
+        }
+    }
+}
