@@ -39,6 +39,9 @@ body {
   color: #0092a5;
   font-size: 1.3em; }
 
+#servicios .iconservicios {
+  max-width: 130px; }
+
 /*footer*/
 footer li a {
   text-decoration: none;
