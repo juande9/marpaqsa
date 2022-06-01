@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -52,7 +52,7 @@
                 necesidades del mercado.
             </p>
             <div class="py-2 d-grid gap-3 d-sm-flex justify-content-sm-center">
-                <button id="botonEncabezado" type="button"
+                <button id="botonencabezado" type="button"
                     class="btn btn-primary btn-lg px-4 gap-3 hvr-grow-shadow"><a class="nav-link" href="#productos">Nuestros Productos</a></button>
                 <button type="button" class="btn btn-outline-secondary btn-lg px-4 hvr-grow-shadow"><a class="nav-link" href="#contacto">Contacto</a></button>
             </div>
@@ -62,12 +62,8 @@
     <!--Sobre Nosotros-->
     <section id="sobrenosotros" class="text-justify container py-4">
         <div class="row">
-            <h1 class="text-center display-4 py-4 mb-4">Sobre Nosotros</h1>
+            <h2 class="text-center display-4 py-4 mb-4">Sobre Nosotros</h2>
             <div class="col-xl-7">
-                <p class="small lh-lg">Desde 1978, en Marpaq S.A. nos hemos desarrollado como <b>importadores y
-                        distribuidores</b>
-                    de materias primas e insumos para la industria y el campo, cumpliendo y adaptandonos a las
-                    necesidades del mercado.</p>
                 <p class="small lh-lg">Estamos ubicados en el <b>Parque Industrial de Lanús</b> y contamos con depósitos
                     de 8500 m2 cubiertos con playa de carga y descarga de 1500 m2. Nuestras oficinas administrativas se
                     encuentran dentro
@@ -89,14 +85,14 @@
     </section>
     <!--Productos-->
     <section id="productos" class="container py-4">
-        <h1 class="text-center display-4 py-4 mb-4">Productos</h1>
+        <h2 class="text-center display-4 py-4 mb-4">Productos</h2>
         <form action="https://formspree.io/f/xjvlapwy" method="POST">
             <input type="search" id="busqueda" name="q" class="inputTexto">
             <input type="submit" value="Buscar" class="boton hvr-grow-shadow" />
             <div class="listadoProductos">
-                <div class="encabezadoTabla ProductoTabla">Nombre</div>
-                <div class="encabezadoTabla TipoTabla">Tipo de Uso</div>
-                <div class="encabezadoTabla OrigenTabla">Origen</div>
+                <div class="encabezadoTabla sticky-top ProductoTabla">Nombre</div>
+                <div class="encabezadoTabla sticky-top TipoTabla">Tipo de Uso</div>
+                <div class="encabezadoTabla sticky-top OrigenTabla">Origen</div>
                 <div class="ProductoTabla">Acido Acético</div>
                 <div class="TipoTabla">Industrial - Curtiembre</div>
                 <div class="OrigenTabla">China - USA</div>
@@ -143,24 +139,24 @@
     </section>
     <!--Servicios-->
     <section id="servicios" class="container py-4">
-        <h1 class="text-center display-4 py-4 mb-4">Servicios</h1>
+        <h2 class="text-center display-4 py-4 mb-4">Servicios</h2>
         <div class="row text-center align-items-baseline">
-            <div class="col-lg-4 pt-3 hvr-grow cardServicios">
-                <img class="pb-2" src="images/camion.png" alt="Camion">
+            <div class="col-lg-4 pt-3 hvr-grow cardservicios">
+                <img class="pb-2 iconservicios" src="images/camion.svg" alt="Camion">
                 <h3 class="fw-normal fw-bold py-3">Logística Integral</h2>
                     <p class="lh-lg small">Contamos con una flota de camiones y personal capacitado, cumpliendo así con
                         el plazo
                         de entrega que requiere el cliente. Todas las unidades cuentan con la habilitación para carga
                         peligrosa y para el traslado de sustancias reguladas por organismos nacionales.</p>
             </div>
-            <div class="col-lg-4 pt-3 rounded hvr-grow cardServicios">
-                <img class="pb-2" src="images/manos.png" alt="Manos">
+            <div class="col-lg-4 pt-3 rounded hvr-grow cardservicios">
+                <img class="pb-2 iconservicios" src="images/manos.svg" alt="Manos">
                 <h3 class="fw-normal fw-bold py-3">Atención Personalizada</h2>
                     <p class="lh-lg small">Nos adaptamos a las necesidades y requerimientos que nuestros clientes
                         solicitan para brindarles un servicio único y permanente.</p>
             </div>
-            <div class="col-lg-4 pt-3 rounded hvr-grow cardServicios">
-                <img class="pb-2" src="images/tilde.png" alt="Check">
+            <div class="col-lg-4 pt-3 rounded hvr-grow cardservicios">
+                <img class="pb-2 iconservicios" src="images/tilde.svg" alt="Check">
                 <h3 class="fw-normal fw-bold py-3">Certificaciones especiales</h2>
                     <p class="lh-lg small">Contamos con la certificación internacional <b>RINA ISO 9001</b> y ofrecemos
                         etiquetado SGA para ofrecer a nuestros clientes la mejor calidad de atención y servicios.</p>
@@ -168,7 +164,7 @@
     </section>
     <!--Contacto-->
     <section id="contacto" class="container py-4">
-        <h1 class="text-center display-4 py-4 mb-4">Contactanos</h1>
+        <h2 class="text-center display-4 py-4 mb-4">Contactanos</h2>
         <div class="row">
             <div class="col-lg-6">
                 <div class="mb-3">

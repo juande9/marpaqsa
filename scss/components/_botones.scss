@@ -1,0 +1,22 @@
+/*Botones*/
+#botonencabezado {
+    background: $colorPrincipal;
+    font-size: 1.3em;
+    border: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+#contacto{ 
+    
+    button{
+    background-color:$colorPrincipal;
+    color: white;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+}
