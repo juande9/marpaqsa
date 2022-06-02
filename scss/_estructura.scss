@@ -4,13 +4,17 @@ $colorTablaHijos: rgb(247, 247, 247);
 /*Encabezado*/
 
 #encabezado {
-    background: rgb(237, 237, 237);
-    background: linear-gradient(328deg, rgba(237, 237, 237, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(237, 237, 237, 1) 100%);
+    background: rgb(0, 189, 214);
+    background: radial-gradient(circle, rgba(0, 189, 214, 1) 0%, rgba(218, 251, 255, 1) 100%);
+
+    p {
+        font-weight: 500;
+    }
 }
 
 /*Sobre Nosotros*/
 
-#sobrenosotros {
+#sobre-nosotros {
     text-align: justify;
 }
 
@@ -49,7 +53,8 @@ $colorTablaHijos: rgb(247, 247, 247);
         color: $colorPrincipal;
         font-size: $textoSubtitulos;
     }
-    .iconservicios{
+
+    .iconservicios {
         max-width: 130px;
     }
 }

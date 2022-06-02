@@ -1,22 +1,59 @@
-/*Botones*/
-#botonencabezado {
-    background: $colorPrincipal;
-    font-size: 1.3em;
-    border: none;
+.botton{
+    border-radius: 15px;
+    border: solid 0.5px black;
+}
 
-    &:hover {
-        text-decoration: underline;
+$tamaño: (
+    escritorio: 2000px,
+    tablet: 768px,
+    mobile: 425px,
+);
+
+@mixin reponsivebtn ($medida) {
+    @if $medida ==escritorio {
+        @media (max-width: map-get($tamaño, escritorio)) {
+            @content;
+        }
+    }
+
+    @else if $medida ==tablet {
+        @media (max-width: map-get($tamaño, tablet)) {
+            @content;
+        }
+    }
+
+    @else if $medida ==mobile {
+        @media (max-width: map-get($tamaño, mobile)) {
+            @content;
+        }
     }
 }
 
-#contacto{ 
-    
-    button{
-    background-color:$colorPrincipal;
-    color: white;
+@each $tipobtn,
+$color in $colorbtn {
+    .btn#{$tipobtn} {
+        @extend .botton;
+        color: black;
+        background-color: $color;
 
-    &:hover{
-        text-decoration: underline;
+        @include reponsivebtn(escritorio) {
+            width: 300px;
+        }
+
+        @include reponsivebtn(tablet) {
+            width: 90%;
+        }
+
+        @include reponsivebtn(mobile) {
+            width: 100%;
+        }
+
+        &:hover {
+            background-color: $color;
+            color: black;
+            font-weight: 500;
+            border: solid 0.5px black;
+            text-decoration: underline;
+        }
     }
-}
 }
