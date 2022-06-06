@@ -1,6 +1,7 @@
 .botton{
-    border-radius: 15px;
-    border: solid 0.5px black;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2) !important;
 }
 
 $tamaño: (
@@ -41,7 +42,7 @@ $color in $colorbtn {
         }
 
         @include reponsivebtn(tablet) {
-            width: 90%;
+            width: 100%;
         }
 
         @include reponsivebtn(mobile) {
@@ -51,8 +52,7 @@ $color in $colorbtn {
         &:hover {
             background-color: $color;
             color: black;
-            font-weight: 500;
-            border: solid 0.5px black;
+            border: solid 0.5px rgba(0, 0, 0, 0.1);
             text-decoration: underline;
         }
     }

@@ -2,12 +2,17 @@
 body {
   font-family: "Montserrat", sans-serif; }
 
+h2 {
+  text-decoration: underline #E1D89F 1px; }
+
 /*Encabezado*/
 #encabezado {
-  background: #00bdd6;
-  background: radial-gradient(circle, #00bdd6 0%, #dafbff 100%); }
+  background: #dafbff;
+  background: radial-gradient(circle, rgba(199, 248, 255, 0.178) 0%, #dafbff 100%); }
   #encabezado p {
     font-weight: 500; }
+  #encabezado h1 {
+    text-decoration: underline white 2px; }
 
 /*Sobre Nosotros*/
 #sobre-nosotros {
@@ -36,14 +41,6 @@ body {
   background-color: white;
   z-index: 1 !important; }
 
-/*Servicios*/
-#servicios h3 {
-  color: #0092a5;
-  font-size: 1.3em; }
-
-#servicios .iconservicios {
-  max-width: 130px; }
-
 /*footer*/
 footer li a {
   text-decoration: none;
@@ -57,8 +54,9 @@ footer div p {
   font-size: 0.7em !important; }
 
 .botton, .btnprimario, .btnsecundario, .btnformulario {
-  border-radius: 15px;
-  border: solid 0.5px black; }
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2) !important; }
 
 .btnprimario {
   color: black;
@@ -68,54 +66,59 @@ footer div p {
       width: 300px; } }
   @media (max-width: 768px) {
     .btnprimario {
-      width: 90%; } }
+      width: 100%; } }
   @media (max-width: 425px) {
     .btnprimario {
       width: 100%; } }
   .btnprimario:hover {
     background-color: white;
     color: black;
-    font-weight: 500;
-    border: solid 0.5px black;
+    border: solid 0.5px rgba(0, 0, 0, 0.1);
     text-decoration: underline; }
 
 .btnsecundario {
   color: black;
-  background-color: lightgray; }
+  background-color: #E1D89F; }
   @media (max-width: 2000px) {
     .btnsecundario {
       width: 300px; } }
   @media (max-width: 768px) {
     .btnsecundario {
-      width: 90%; } }
+      width: 100%; } }
   @media (max-width: 425px) {
     .btnsecundario {
       width: 100%; } }
   .btnsecundario:hover {
-    background-color: lightgray;
+    background-color: #E1D89F;
     color: black;
-    font-weight: 500;
-    border: solid 0.5px black;
+    border: solid 0.5px rgba(0, 0, 0, 0.1);
     text-decoration: underline; }
 
 .btnformulario {
   color: black;
-  background-color: lightgray; }
+  background-color: #DDC3D0; }
   @media (max-width: 2000px) {
     .btnformulario {
       width: 300px; } }
   @media (max-width: 768px) {
     .btnformulario {
-      width: 90%; } }
+      width: 100%; } }
   @media (max-width: 425px) {
     .btnformulario {
       width: 100%; } }
   .btnformulario:hover {
-    background-color: lightgray;
+    background-color: #DDC3D0;
     color: black;
-    font-weight: 500;
-    border: solid 0.5px black;
+    border: solid 0.5px rgba(0, 0, 0, 0.1);
     text-decoration: underline; }
+
+.cardservicios h3 {
+  color: black;
+  text-decoration: underline #E1D89F 1px;
+  font-size: 1.3em; }
+
+.cardservicios .iconservicios {
+  max-width: 130px; }
 
 .cardservicios:hover {
   background-color: #f8f8f8; }
