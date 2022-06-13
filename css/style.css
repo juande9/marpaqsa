@@ -3,16 +3,18 @@ body {
   font-family: "Montserrat", sans-serif; }
 
 h2 {
-  text-decoration: underline #E1D89F 1px; }
+  text-decoration: underline #E1D89F 2px; }
 
 /*Encabezado*/
 #encabezado {
   background: #dafbff;
   background: radial-gradient(circle, rgba(199, 248, 255, 0.178) 0%, #dafbff 100%); }
+  #encabezado h1 {
+    text-decoration: underline #E1D89F 2px; }
   #encabezado p {
     font-weight: 500; }
-  #encabezado h1 {
-    text-decoration: underline white 2px; }
+    #encabezado p b {
+      color: #0092a5; }
 
 /*Sobre Nosotros*/
 #sobre-nosotros {
@@ -23,7 +25,7 @@ h2 {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
   grid-template-rows: 1.6fr repeat(10, 1fr);
-  max-height: 400px;
+  max-height: 490px;
   overflow: auto;
   font-size: 14px;
   z-index: 1; }
@@ -37,14 +39,14 @@ h2 {
   padding: 1em; }
 
 .encabezadoTabla {
-  font-weight: 600;
+  font-weight: bold;
   background-color: white;
   z-index: 1 !important; }
 
 /*footer*/
 footer li a {
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 0.8em !important; }
 
 footer li:hover {
@@ -59,17 +61,19 @@ footer div p {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2) !important; }
 
 .btnprimario {
-  color: black;
   background-color: white; }
   @media (max-width: 2000px) {
     .btnprimario {
-      width: 300px; } }
+      width: 300px;
+      height: 48px; } }
   @media (max-width: 768px) {
     .btnprimario {
-      width: 100%; } }
+      width: 100%;
+      height: auto; } }
   @media (max-width: 425px) {
     .btnprimario {
-      width: 100%; } }
+      width: 100%;
+      height: auto; } }
   .btnprimario:hover {
     background-color: white;
     color: black;
@@ -77,17 +81,19 @@ footer div p {
     text-decoration: underline; }
 
 .btnsecundario {
-  color: black;
   background-color: #E1D89F; }
   @media (max-width: 2000px) {
     .btnsecundario {
-      width: 300px; } }
+      width: 300px;
+      height: 48px; } }
   @media (max-width: 768px) {
     .btnsecundario {
-      width: 100%; } }
+      width: 100%;
+      height: auto; } }
   @media (max-width: 425px) {
     .btnsecundario {
-      width: 100%; } }
+      width: 100%;
+      height: auto; } }
   .btnsecundario:hover {
     background-color: #E1D89F;
     color: black;
@@ -95,17 +101,19 @@ footer div p {
     text-decoration: underline; }
 
 .btnformulario {
-  color: black;
   background-color: #DDC3D0; }
   @media (max-width: 2000px) {
     .btnformulario {
-      width: 300px; } }
+      width: 300px;
+      height: 48px; } }
   @media (max-width: 768px) {
     .btnformulario {
-      width: 100%; } }
+      width: 100%;
+      height: auto; } }
   @media (max-width: 425px) {
     .btnformulario {
-      width: 100%; } }
+      width: 100%;
+      height: auto; } }
   .btnformulario:hover {
     background-color: #DDC3D0;
     color: black;
@@ -113,7 +121,7 @@ footer div p {
     text-decoration: underline; }
 
 .cardservicios h3 {
-  color: black;
+  color: #0092a5;
   text-decoration: underline #E1D89F 1px;
   font-size: 1.3em; }
 
@@ -134,7 +142,9 @@ footer div p {
   -webkit-transition-property: transform;
   transition-property: transform; }
 
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
 
@@ -155,3 +165,32 @@ footer div p {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
+
+.fadein {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */ }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }

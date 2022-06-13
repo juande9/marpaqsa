@@ -10,22 +10,26 @@ $tamaño: (
     mobile: 425px,
 );
 
+
 @mixin reponsivebtn ($medida) {
     @if $medida ==escritorio {
         @media (max-width: map-get($tamaño, escritorio)) {
             @content;
+            height: 48px;
         }
     }
 
     @else if $medida ==tablet {
         @media (max-width: map-get($tamaño, tablet)) {
             @content;
+            height: auto;
         }
     }
 
     @else if $medida ==mobile {
         @media (max-width: map-get($tamaño, mobile)) {
             @content;
+            height: auto;
         }
     }
 }
@@ -34,7 +38,6 @@ $tamaño: (
 $color in $colorbtn {
     .btn#{$tipobtn} {
         @extend .botton;
-        color: black;
         background-color: $color;
 
         @include reponsivebtn(escritorio) {

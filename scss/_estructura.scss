@@ -1,5 +1,6 @@
 $textoSubtitulos: 1.3em;
 $colorTablaHijos: rgb(247, 247, 247);
+$negrita: 500;
 
 /*Encabezado*/
 
@@ -7,11 +8,16 @@ $colorTablaHijos: rgb(247, 247, 247);
     background: rgba(218, 251, 255, 1);
     background: radial-gradient(circle, rgba(199, 248, 255, 0.178) 0%, rgba(218, 251, 255, 1) 100%);
 
-    p {
-        font-weight: 500;
+    h1 {
+        text-decoration: underline $colorSecundario 2px;
     }
-    h1{
-        text-decoration: underline white 2px;
+
+    p {
+        font-weight: $negrita;
+
+        b {
+            color: $colorPrincipal;
+        }
     }
 }
 
@@ -27,7 +33,7 @@ $colorTablaHijos: rgb(247, 247, 247);
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
     grid-template-rows: 1.6fr repeat(10, 1fr);
-    max-height: 400px;
+    max-height: 490px;
     overflow: auto;
     font-size: 14px;
     z-index: 1;
@@ -44,7 +50,7 @@ $colorTablaHijos: rgb(247, 247, 247);
 }
 
 .encabezadoTabla {
-    font-weight: 600;
+    font-weight: bold;
     background-color: white;
     z-index: 1 !important;
 }
@@ -55,7 +61,7 @@ footer {
     li {
         a {
             text-decoration: none;
-            font-weight: bold;
+            font-weight: $negrita;
             font-size: 0.8em !important;
         }
 
