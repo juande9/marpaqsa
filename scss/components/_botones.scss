@@ -15,7 +15,7 @@ $tamaño: (
     @if $medida ==escritorio {
         @media (max-width: map-get($tamaño, escritorio)) {
             @content;
-            height: 48px;
+            height: 2.2em;
         }
     }
 
