@@ -65,7 +65,7 @@ footer div p {
   @media (max-width: 2000px) {
     .btnprimario {
       width: 300px;
-      height: 48px; } }
+      height: 2.2em; } }
   @media (max-width: 768px) {
     .btnprimario {
       width: 100%;
@@ -85,7 +85,7 @@ footer div p {
   @media (max-width: 2000px) {
     .btnsecundario {
       width: 300px;
-      height: 48px; } }
+      height: 2.2em; } }
   @media (max-width: 768px) {
     .btnsecundario {
       width: 100%;
@@ -105,7 +105,7 @@ footer div p {
   @media (max-width: 2000px) {
     .btnformulario {
       width: 300px;
-      height: 48px; } }
+      height: 2.2em; } }
   @media (max-width: 768px) {
     .btnformulario {
       width: 100%;
